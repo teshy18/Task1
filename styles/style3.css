@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
 
-*{
+* {
     box-sizing: border-box;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -15,81 +15,87 @@ body{
     background-size: cover;
     background-position-y: -30px;
     background-repeat: no-repeat;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
 }
 
-header{
-    position: relative;
+header {
     width: 100%;
     height: 150px;
-    margin: auto;
-    margin-bottom: 80px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
     background-color: rgba(51, 51, 51, 0.8)
 }
 
-header .logo{
+header .top {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header .logo {
+    margin: 0 30px;
     width: 100px;
-    position: absolute;
-    top:20%;
-    left: 5%;
     z-index: 20;
 }
 
-header .logo:hover{
- scale:1.1;
- transition: 1s;
+header .logo:hover {
+    scale: 1.1;
+    transition: 1s;
 }
 
-header h1{
-    position: relative;
+header h1 {
     width: fit-content;
-    top: 20%;
-    left: 250px;
     font-family: 'Comic Neue', cursive;
     font-size: 3em;
-    text-shadow: 2px 2px 5px  white;
+    text-shadow: 2px 2px 5px white;
 }
 
-header h2{
+main h2 {
+    width: 100%;
     background-color: rgba(40, 55, 215, 0.8);
     color: white;
-    margin: 0 15%;
-    /* text-indent: 250px; */
+    margin: 0 0 10px;
     padding: 10px 20px;
-    position: relative;
-    top: 130px;
     z-index: 10;
 }
 
-nav{
-    position: absolute;
-    align-items: center;
-    top: 100px;
-    left: 200px;
+nav {
+    width: 100%;
     height: auto;
-    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 30px;
 }
 
-nav a{
+nav a {
+    text-decoration: none;
     display: inline-block;
-    width: 110px;
+    width: 15%;
     border-radius: 5px;
     padding: 8px 0;
-    margin-right: 40px;
     text-align: center;
-    font-weight:600;
+    font-weight: 600;
     color: white;
     background-color: rgb(40, 55, 215);
     box-shadow: 5px 5px 20px 1px gray;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: rgb(48, 65, 249);
     box-shadow: 1px 1px 20px 1px rgb(48, 65, 249);
     scale: 1.05;
     transition: 500ms;
 }
 
-.active{
+.active {
     text-decoration: none;
     color: rgb(48, 65, 249);
     background-color: white;
@@ -97,39 +103,83 @@ nav a:hover{
     scale: 1.05;
 }
 
-.active:hover{
+.active:hover {
     color: rgb(48, 65, 249);
     background-color: white;
 }
 
 
-main{
+main {
     margin: 0 15%;
     padding: 20px;
     background-color: rgba(51, 51, 51, 0.2);
-
 }
 
-main article{
+main article {
     background-color: rgba(213, 213, 213, 0.6);
     padding: 10px;
     margin-bottom: 10px;
 }
 
-main article:hover{
-    background-color: rgba(213, 213, 213, 1);
+main article:hover {
+    background-color: rgb(255, 255, 255);
     scale: 1.01;
     transition: 300ms;
 }
 
-main article h3{
-    color:rgb(40, 55, 215);
+main article h3 {
+    color: rgb(40, 55, 215);
     font-size: 1.5em;
 }
 
-main article p{
+main article p {
     text-indent: 15px;
     font-size: 1.2em;
     margin: 5px 0;
 }
 
+/* Rules: estilos especificos de rules.html */
+main .center {
+    text-align: center;
+}
+
+main .bold {
+    font-weight: bold;
+}
+
+.rules section {
+    margin-bottom: 20px;
+}
+
+.rules h4 {
+    font-size: 1.2em;
+    margin: 10px 0;
+
+}
+
+.rules p {
+    margin: 0px
+}
+
+.rules li {
+    margin-left: 30px;
+}
+
+/* Table */
+
+table{
+    width: 80%;
+    margin: 20px 0;
+    border: 1px solid rgb(40, 55, 215);
+    background-color: rgb(40, 55, 215);
+}
+
+table td{
+    background-color: white;
+    border: 1px solid rgb(40, 55, 215);
+}
+
+th{
+    color: white;
+    background-color: rgb(40, 55, 215);
+}
