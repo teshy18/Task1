@@ -20,6 +20,8 @@ body {
     justify-content: space-around;
 }
 
+/* Header */
+
 header {
     width: 100%;
     height: 150px;
@@ -66,6 +68,8 @@ main h2 {
     z-index: 10;
 }
 
+/* Nav */
+
 nav {
     width: 100%;
     height: auto;
@@ -78,7 +82,7 @@ nav {
 nav a {
     text-decoration: none;
     display: inline-block;
-    width: 15%;
+    width: 12%;
     border-radius: 5px;
     padding: 8px 0;
     text-align: center;
@@ -108,6 +112,8 @@ nav a:hover {
     background-color: white;
 }
 
+
+/* Main */
 
 main {
     margin: 0 15%;
@@ -183,3 +189,127 @@ th{
     color: white;
     background-color: rgb(40, 55, 215);
 }
+
+/* Maps */
+
+main article.maps{
+    background-color: white;
+}
+
+main article.maps:hover{
+    scale: 1;
+}
+
+main article .maps-container{
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+main article .map{
+    border: 1px solid red;
+    filter: grayscale(100%);
+    margin: 10px 20px;
+}
+main article .map:hover{
+    scale: 1.1;
+    filter: grayscale(0);
+    transition: 0.5s;
+}
+
+
+/* Form */
+
+form{
+    background-color: white;
+    padding: 10px
+}
+
+form fieldset{
+    margin: 15px 5px;
+    padding: 10px;
+}
+
+form legend{
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0 5px;
+}
+form input[type=checkbox]{
+    margin-right: 20px;
+}
+form input[type=radio]{
+    margin-right: 20px;
+}
+
+form .button-container{
+    margin: 5px 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+form button{
+    padding: 10px;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send{
+    background-color: rgb(52, 220, 52);
+}
+
+#send:hover{
+    background-color: rgb(74, 233, 74);
+}
+#clean{
+    background-color: rgb(243, 67, 67);
+}
+#clean:hover{
+    background-color: rgb(244, 88, 88);
+}
+
+
+/* Gallery */
+
+.gallery{
+    border: 2px solid black;
+    width: 90vw;
+    padding: 20px 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: row  wrap;
+    gap: 20px
+}
+
+.img-container{
+    width: calc(33% - 40px);
+    height: 300px;
+    background-color: rgba(213, 213, 213, 0.6);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.img-gallery{
+    width: 90%;
+    margin-left: 5%;
+    filter: grayscale(100%);
+
+}
+
+.img-gallery:hover{
+    filter: grayscale(0);
+    scale: 1.1;
+    z-index: 10;
+    transition: 1s;
+}
+
